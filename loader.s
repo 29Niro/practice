@@ -13,5 +13,8 @@
 
     loader:                         ; the loader label (defined as entry point in linker script)
         mov eax, 0xCAFEBABE         ; place the number 0xCAFEBABE in the register eax
+
+	extern run
+	call run
     .loop:
         jmp .loop                   ; loop forever
