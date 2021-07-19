@@ -18,3 +18,5 @@
 	call run
     .loop:
         jmp .loop                   ; loop forever
+
+    section .bss
